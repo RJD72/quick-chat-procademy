@@ -1,7 +1,9 @@
 const cloudinary = require("cloudinary").v2;
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
 
-const api_key = import.meta.env.VITE_CLOUDINARY_API_KEY;
-const api_secret = import.meta.env.VITE_CLOUDINARY_API_SECRET;
+const api_key = process.env.CLOUDINARY_API_KEY;
+const api_secret = process.env.CLOUDINARY_API_SECRET;
 
 // Configuration
 cloudinary.config({
