@@ -8,7 +8,7 @@ const chatRouter = require("./controllers/chatController");
 const messageRouter = require("./controllers/messageController");
 const { Socket } = require("socket.io");
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://quick-chat-app-client-krcl.onrender.com"];
 
 app.use(
   cors({
