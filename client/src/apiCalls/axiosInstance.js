@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3000";
+const url = "https://quick-chat-app-server-l0yu.onrender.com";
 
 export const axiosInstance = axios.create({
   baseURL: url,
